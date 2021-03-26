@@ -13,7 +13,7 @@ Docker image for MySQL 5.1.73 database based on official [MySQL](https://hub.doc
 Start a **mysql** server instance:
     
     # general form
-    $ $ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
+    $ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
     
     # example
     $ docker run -d --name mysql-5.1.73 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=[password] vsamov/mysql-5.1.73:latest
@@ -22,7 +22,7 @@ Start a **mysql** server instance:
     
 Other **commands**:
 
-    ## kill the container
+    # kill the container
     docker kill [container-id]
     
     # shell script/shell access
